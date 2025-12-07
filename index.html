@@ -26,7 +26,7 @@
         .nar-button {
             display: flex;
             justify-content: space-between;
-           
+            padding-bottom: 5px;
         }
         .button {
             text-align: center;
@@ -76,7 +76,7 @@
         border-radius: 20px;
         background-color: #EF7F29;
         border:none;
-        height: 33px;
+        height: 25px;
        }
        .price {
         display: flex;
@@ -109,6 +109,14 @@
         border: #E4690B solid;
         border-radius: 15px;
         padding: 2px;
+       }
+       .combo-detail {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        padding-left: 2px;
+        padding-right: 2px;
        }
         @media (max-width: 768px) {
         .category {
@@ -180,22 +188,38 @@
                 <button class="add-button">+Add</button>
                 </div></div>
             <div class="box-special">
-                <h style="margin-bottom:0px;padding-left: 10px;"><b>Today's offer</b></h3>
+                <h3 style="margin-bottom:0px;padding-left: 10px;height: 25px;font-size: 16px;"><b>Today's offer</b></h3>
                 <div class="box-special-item">
                     <div class="combo">
-                        <img style="width: 100%" src="assets/combo-1.png" >
+                        <h3 style="font-size: 16px;color: red;font-weight: bold;margin: 0px;height: 16px;">HAPPY DECEMBER</h3>
+                        <div class="combo-detail">
+                            <img style="width: 100%"src="assets/combo-1.jpg">
+                            <p style="font-size: 10px;margin: 0px;align-content: start;width: 100%;padding-top: 10px;">
+                                <b>1 Tasty Cheese</b><br>
+                                <b>1 Fries</b><br>
+                                <b>1 Coca</b><br>
+                            </p>
+                        </div>
                         <div class="price">
                             <p style="margin:0px"><b>€12.99</b></p>
                             <button class="add-button">+Add</button>
                         </div>
                     </div>  
                     <div class="combo">
-                        <img style="width: 100%" src="assets/combo-2.png" >
+                        <h3 style="font-size: 16px;color: red;font-weight: bold;margin: 0px;height: 16px;">MERRY CHRISTMAS</h3>
+                        <div class="combo-detail">
+                            <img style="width: 100%"src="assets/combo-2.jpg">
+                            <p style="font-size: 10px;margin: 0px;align-content: start;width: 100%;padding-top: 10px;">
+                                <b>1 Bacon Cheese</b><br>
+                                <b>1 Ice Scream</b><br>
+                                <b>1 Fries + 1 Coca</b><br>
+                            </p>
+                        </div>
                         <div class="price">
                             <p style="margin:0px"><b>€12.99</b></p>
                             <button class="add-button">+Add</button>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
